@@ -22,13 +22,14 @@ function nextQuiz(){
 
 }
 function chooseAns(id){
+    let count = 3;
     let ans = document.getElementById(id).innerHTML;
     if(object.checkAnswer(ans)){
         nextQuiz()
     }else {
-        count()
-
+        count--;
     }
+
 }
 // function count(){
 //     document.getElementById("count").innerHTML = count;

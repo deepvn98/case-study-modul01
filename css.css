@@ -1,9 +1,11 @@
 body{
-    background-image: url("picter/b.jpg");
+    background-image: url("picter/a1.jpg");
+}
+h1{
+    color: orange;
 }
 div#explain{
-    /*background: #fffefe;*/
-    width: 600px;
+      width: 600px;
 }
 div#quiz{
     width: 600px;
@@ -17,6 +19,7 @@ div#quiz{
 }
 div#question{
     height: 50px;
+    color: darkorange;
 
 }
 div#explain{
