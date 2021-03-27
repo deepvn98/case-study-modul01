@@ -5,6 +5,8 @@ function disPlay(index){
     for( let i = 1; i <=object.quizs[index].answer.length; i++){
         document.getElementById("ans"+ i).innerHTML=object.quizs[index].answer[i-1];
     }
+    document.getElementById("explain").innerHTML= "Nói về kết quả của câu trước : "+object.quizs[index - 1].explain;
+
 }
 disPlay(0)
 function nextQuiz(){
@@ -17,8 +19,8 @@ function nextQuiz(){
     }
 
 }
-function chooseAns(id){
-    let ans = document.getElementById("id").innerHTML;
-    object.chooseAnser(ans);
-
-}
+// function chooseAns(id){
+//     let ans = document.getElementById("id").innerHTML;
+//     object.chooseAnswer(ans);
+//
+// }

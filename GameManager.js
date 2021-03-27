@@ -13,7 +13,7 @@ class GameManager {
 
     }
     chooseAnswer(ans){
-        if(this.checkAnswer()){
+        if(this.checkAnswer(ans)){
             alert("đúng")
         }else {
             alert("Sai")
