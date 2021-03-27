@@ -1,3 +1,4 @@
+
 function disPlay(index){
     document.getElementById("question").innerHTML=object.quizs[index].question;
     document.getElementById("img").src=object.quizs[index].img;
@@ -19,8 +20,11 @@ function nextQuiz(){
     }
 
 }
-// function chooseAns(id){
-//     let ans = document.getElementById("id").innerHTML;
-//     object.chooseAnswer(ans);
-//
-// }
+function chooseAns(id){
+    let ans = document.getElementById(id).innerHTML;
+    // object.chooseAnswer(ans);
+    if(object.checkAnswer(ans)){
+        nextQuiz()
+
+    }
+}
