@@ -1,0 +1,39 @@
+div#quiz{
+    width: 600px;
+    height: 550px;
+    background: gold;
+    border: 1px solid;
+    text-align: center;
+    margin-left: 30%;
+
+
+}
+div#question{
+    height: 50px;
+
+}
+div#explain{
+    height: 70px;
+
+
+}
+div#picter{
+    height: 300px;
+
+}
+button.button{
+    margin-top: 20px;
+    border: 1px solid;
+}
+
+.button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    width: 200px;
+    height: 35px;
+}
+
+.button:hover {
+    background-color: darkgreen;
+    color: cornsilk;
+}
