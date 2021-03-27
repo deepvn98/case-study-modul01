@@ -8,7 +8,7 @@ class Quiz{
 
     }
 }
-let quiz1 = new Quiz("Câu1: Trò gì 5<2 , 2<0 , 0<5 ?" ,"img/a.jpg", [" Trò kéo búa bao "," Trò ô ăn quan "," Trò mèo "," Trò Sungoku "] ," Trò ô ăn quan " , '2 là cái kéo đó, 5 là vái bao, 0 là cái búa, hiểu hơm hiểu hơm!!' );
+let quiz1 = new Quiz("Câu1: Trò gì 5<2 , 2<0 , 0<5 ?" ,"picter/a.jpg", [" Trò kéo búa bao "," Trò ô ăn quan "," Trò mèo "," Trò Sungoku "] ," Trò ô ăn quan " , '2 là cái kéo đó, 5 là vái bao, 0 là cái búa, hiểu hơm hiểu hơm!!' );
 let quiz2 = new Quiz("Câu2: Một con ốc sên leo lên một cái cây cao 13m,ban ngày leo được 3m,ban đêm bị tụt xuống 1m,vậy mất bao ngày nó mới leo đc hết cây?" ,"img/2.jpg" ,[" 4 "," 6 "," 7 "," 9 "] ," 7 " , "đơn giản mà nhỉ, vậy mà vẫn có người trả lời sai" );
 let quiz3 = new Quiz("Câu3: Một bà già đi tắm sông, có thằng kia lấy trộm quần của bà già. bà la lên (Thằng nào lấy trộm quần của taoooooooo?). Hỏi chữa nào được kéo dài nhiều nhất?" ,"img/3.jpg", [" Thằng bé "," Bà Già "," Tao "," kéo "] ," Tao " , " Mấy bạn nghĩ chữ kéo được kéo dài nhưng game bảo chữa tao nhá" );
 let quiz4 = new Quiz("Câu4: Cho keo 502 vào chảo chống dính, hỏi có dính hay không dính?" ,"img/4.jpg", [" Dính "," không Dính "," 50/50 "," Không Biết "] ," Không Biết " ,"Thử đi rồi biết" );
