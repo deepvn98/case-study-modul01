@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
+<div style="margin-left: 50%"><h1>Đố Vui</h1></div>
 <div id="quiz">
     <br>
     <div id="question"></div>
@@ -16,18 +17,20 @@
     <button class = "button" id = "ans2" onclick="chooseAns(this.id)">áp án 2</button>
     <button class = "button" id = "ans3" onclick="chooseAns(this.id)">Đáp án 3</button>
     <button class = "button" id = "ans4" onclick="chooseAns(this.id)">Đáp án 4</button>
-    <p id="point"></p>
+    <p id="count"></p>
+    <div  id="explain" > </div>
     <br>
-    <h2 id="result"></h2>
+<!--    <h2 id="result"></h2>-->
 </div>
-<br>
-<button style="margin-left:30%" id="next" onclick="nextQuiz()">next</button>
-<button id="" onclick="">reset</button>
-<br>
-<div style="margin-left: 30%" id="explain" > </div>
+<!--<br>-->
+<!--<button style="margin-left:30%" id="next" onclick="nextQuiz()">next</button>-->
+<!--<button id="" onclick="">reset</button>-->
+<!--<br>-->
 
 </body>
 <script src="Quiz.js"></script>
 <script src="GameManager.js"></script>
 <script src="LineGame.js"></script>
+<script src="endGame.js"></script>
+
 </html>

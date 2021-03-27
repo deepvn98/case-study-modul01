@@ -9,6 +9,7 @@ function disPlay(index){
     document.getElementById("explain").innerHTML= "Nói về kết quả của câu trước : "+object.quizs[index - 1].explain;
 
 }
+
 disPlay(0)
 function nextQuiz(){
     if(object.current < object.number - 1 ){
@@ -22,9 +23,13 @@ function nextQuiz(){
 }
 function chooseAns(id){
     let ans = document.getElementById(id).innerHTML;
-    // object.chooseAnswer(ans);
     if(object.checkAnswer(ans)){
         nextQuiz()
+    }else {
+        count()
 
     }
 }
+// function count(){
+//     document.getElementById("count").innerHTML = count;
+// }

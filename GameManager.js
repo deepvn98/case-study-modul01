@@ -12,12 +12,9 @@ class GameManager {
         }
 
     }
-    chooseAnswer(ans){
-        if(this.checkAnswer(ans)){
-            alert("đúng")
-        }else {
-            alert("Sai")
-        }
+    chooseAnswer(){
+
+
     }
     nextQuiz(){
         if(object.current < object.number - 1 ){
@@ -27,7 +24,10 @@ class GameManager {
         }
 
     }
-    nextGame(){
+    endGame(count){
+        if(!this.checkAnswer(ans)){
+            count--;
+        }
 
     }
     addQuiz(quiz){

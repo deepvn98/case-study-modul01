@@ -1,7 +1,14 @@
+body{
+    background-image: url("picter/b.jpg");
+}
+div#explain{
+    /*background: #fffefe;*/
+    width: 600px;
+}
 div#quiz{
     width: 600px;
-    height: 550px;
-    background: gold;
+    height: 700px;
+    background: #fffefe;
     border: 1px solid;
     text-align: center;
     margin-left: 30%;
@@ -34,6 +41,6 @@ button.button{
 }
 
 .button:hover {
-    background-color: darkgreen;
+    background-color: #241f22;
     color: cornsilk;
 }
