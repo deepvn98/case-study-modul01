@@ -1,15 +1,12 @@
 
-function disPlay(index){
-    document.getElementById("question").innerHTML=object.quizs[index].question;
-    document.getElementById("img").src=object.quizs[index].img;
-    console.log(object.quizs[index])
-    for( let i = 1; i <=object.quizs[index].answer.length; i++){
-        document.getElementById("ans"+ i).innerHTML=object.quizs[index].answer[i-1];
-
-    }alert(object.quizs[index -1].explain);
-    // document.getElementById("explain").innerHTML= "Nói về kết quả của câu trước : "+object.quizs[index - 1].explain;
+function disPlay ( index ) {
+    document.getElementById("question").innerHTML = object.quizs[ index ].question;
+    document.getElementById("img").src=object.quizs[ index ].img;
+    console.log(object.quizs[ index ] )
+    for( let i = 1; i <= object.quizs[index].answer.length; i++){
+        document.getElementById("ans"+ i).innerHTML = object.quizs[ index ].answer[ i-1 ];
+    }alert( "Bạn đã trả lời đúng: " + object.quizs[ index -1 ].explain);
 }
-
 disPlay(0)
 function nextQuiz(){
     if(object.current < object.number - 1 ){
@@ -19,18 +16,17 @@ function nextQuiz(){
     }else {
         alert("Hoàn thành")
     }
-
 }
-function chooseAns(id){
-    let count = 3;
+function endGame(){
+    object.endGame();
+    disPlay(object.current);
+}
+function chooseAns(id) {
     let ans = document.getElementById(id).innerHTML;
-    if(object.checkAnswer(ans)){
+    if (object.checkAnswer(ans)) {
         nextQuiz()
     }else {
-        count--;
+        endGame()
     }
-
 }
-// function count(){
-//     document.getElementById("count").innerHTML = count;
-// }
+document.getElementById("count").innerHTML = " bạn còn " + count + " lượt chơi!"

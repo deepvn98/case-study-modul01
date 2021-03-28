@@ -3,6 +3,7 @@ body{
 }
 h1{
     color: orange;
+    font-size: 60px;
 }
 div#quiz{
     width: 600px;
@@ -13,18 +14,22 @@ div#quiz{
     margin-left: 30%;
 }
 div#question{
-    height: 50px;
+    height: 70px;
     color: darkorange;
-
+    font-size: 20px;
 }
 div#explain{
     height: 30px;
-
-
 }
-div#picter{
+#picter{
     height: 200px;
-
+}
+#icon{
+   width: 60px;
+    display: flex;
+}
+.music{
+    margin-left: 90%;
 }
 button.button{
     margin-top: 20px;

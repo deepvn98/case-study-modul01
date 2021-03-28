@@ -2,34 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Game Đố Vui</title>
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-<div style="margin-left: 50%"  id="id"><h1>Đố Vui</h1></div>
-<div id="quiz">
+<div style = "margin-left: 46%"  id = "id"><h1> Đố Vui </h1></div>
+<div id = "quiz">
     <br>
-    <div id="question"></div>
-    <div id="picter">
-        <img src="" alt="" id="img">
+    <div id = "question" ></div>
+    <div class = "music" >
+        <img src = "picter/iconmusic.jpg" id = "icon">
     </div>
-    <button class = "button" id = "ans1" onclick="chooseAns(this.id)">Đáp án 1</button>
-    <button class = "button" id = "ans2" onclick="chooseAns(this.id)">áp án 2</button>
-    <button class = "button" id = "ans3" onclick="chooseAns(this.id)">Đáp án 3</button>
-    <button class = "button" id = "ans4" onclick="chooseAns(this.id)">Đáp án 4</button>
-    <p id="count"></p>
-    <div  id="explain" > </div>
+    <div id = "picter">
+        <img src = "" alt = "" id = "img">
+    </div>
+    <button class = "button" id = "ans1" onclick = "chooseAns(this.id)"> Đáp án 1 </button>
+    <button class = "button" id = "ans2" onclick = "chooseAns(this.id)"> áp án 2 </button>
+    <button class = "button" id = "ans3" onclick = "chooseAns(this.id)"> Đáp án 3 </button>
+    <button class = "button" id = "ans4" onclick = "chooseAns(this.id)"> Đáp án 4 </button>
+    <p id = "count"></p>
+    <div  id = " explain " > </div>
     <br>
-<!--    <h2 id="result"></h2>-->
 </div>
-<!--<br>-->
-<!--<button style="margin-left:30%" id="next" onclick="nextQuiz()">next</button>-->
-<!--<button id="" onclick="">reset</button>-->
-<!--<br>-->
-
+    <audio id = "mymusic">
+        <source src = "">
+    </audio>
 </body>
-<script src="Quiz.js"></script>
-<script src="GameManager.js"></script>
-<script src="LineGame.js"></script>
+<script src = "Quiz.js"></script>
+<script src = "GameManager.js"></script>
+<script src = "LineGame.js"></script>
 
 </html>
