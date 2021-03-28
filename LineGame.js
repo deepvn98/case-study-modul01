@@ -14,7 +14,7 @@ function nextQuiz(){
         disPlay(object.current);
 
     }else {
-        alert("Hoàn thành")
+        alert("Xin chúc mừng, Bạn đã chiến thắng!!")
     }
 }
 function endGame(){
@@ -29,4 +29,4 @@ function chooseAns(id) {
         endGame()
     }
 }
-document.getElementById("count").innerHTML = " bạn còn " + count + " lượt chơi!"
+
