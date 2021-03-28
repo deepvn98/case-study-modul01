@@ -5,9 +5,9 @@ function disPlay(index){
     console.log(object.quizs[index])
     for( let i = 1; i <=object.quizs[index].answer.length; i++){
         document.getElementById("ans"+ i).innerHTML=object.quizs[index].answer[i-1];
-    }
-    document.getElementById("explain").innerHTML= "Nói về kết quả của câu trước : "+object.quizs[index - 1].explain;
 
+    }alert(object.quizs[index -1].explain);
+    // document.getElementById("explain").innerHTML= "Nói về kết quả của câu trước : "+object.quizs[index - 1].explain;
 }
 
 disPlay(0)

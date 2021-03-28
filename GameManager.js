@@ -25,7 +25,7 @@ class GameManager {
 
     }
     endGame(count){
-        if(!this.checkAnswer(ans)){
+        if(!this.checkAnswer()){
             count--;
         }
 

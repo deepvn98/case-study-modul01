@@ -1,21 +1,16 @@
 body{
-    background-image: url("picter/a1.jpg");
+    background-image: url("picter/backgrok1.jpg");
 }
 h1{
     color: orange;
 }
-div#explain{
-      width: 600px;
-}
 div#quiz{
     width: 600px;
-    height: 700px;
+    height: 600px;
     background: #fffefe;
     border: 1px solid;
     text-align: center;
     margin-left: 30%;
-
-
 }
 div#question{
     height: 50px;
@@ -23,12 +18,12 @@ div#question{
 
 }
 div#explain{
-    height: 70px;
+    height: 30px;
 
 
 }
 div#picter{
-    height: 300px;
+    height: 200px;
 
 }
 button.button{
