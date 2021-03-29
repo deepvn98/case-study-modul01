@@ -1,6 +1,5 @@
 
 function disPlay ( index ) {
-    // showCount()
     document.getElementById("question").innerHTML = object.quizs[ index ].question;
     document.getElementById("img").src=object.quizs[ index ].img;
     for( let i = 1; i <= object.quizs[index].answer.length; i++){
@@ -39,7 +38,7 @@ function chooseAns(id) {
     let number = object.count;
     let point = object.point;
     document.getElementById("count").innerHTML ="You also " +number+ " left turn";
-    document.getElementById("apoint").innerHTML = point;
+    document.getElementById("apoint").innerHTML ="Point: " + point;
 }
 function playMusic(){
     document.getElementById("happy1").play();
