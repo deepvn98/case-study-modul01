@@ -1,5 +1,6 @@
 //Hiển thị
 function disPlay ( index ) {
+    myMusic()
     document.getElementById("question").innerHTML = object.quizs[ index ].question;
     document.getElementById("img").src=object.quizs[ index ].img;
     for( let i = 1; i <= object.quizs[index].answer.length; i++){
@@ -51,8 +52,18 @@ function musicTrue(){
 function musicFales(){
     document.getElementById("ohno").play();
 }
-// let myMusic = document.getElementById("mymusic");
-// let icon = document.getElementById("icon");
-// icon.onclick = function (){
-//     myMusic.play()
-// }
+function myMusic(){
+    let myMusic = document.getElementById("mymusic");
+    let icon = document.getElementById("icon");
+    icon.onclick = function (){
+        if (myMusic.paused){
+            myMusic.play()
+            icon.src = "picter/pause.png"
+        }else {
+            myMusic.pause();
+            icon.src = "picter/play.png"
+
+        }
+
+    }
+}
