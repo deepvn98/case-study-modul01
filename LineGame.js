@@ -29,8 +29,9 @@ function endGame(){
 function chooseAns(id) {
     let ans = document.getElementById(id).innerHTML;
     if (object.checkAnswer(ans)) {
-        showCount()
-        nextQuiz()
+        playMusic();
+        showCount();
+        nextQuiz();
     }else {
         endGame()
     }
@@ -40,5 +41,7 @@ function chooseAns(id) {
     document.getElementById("count").innerHTML ="You also " +number+ " left turn";
     document.getElementById("apoint").innerHTML = point;
 }
-
+function playMusic(){
+    document.getElementById("happy1").play();
+}
 
