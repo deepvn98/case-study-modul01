@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset = "UTF-8">
     <title>Game Đố Vui</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel = "stylesheet" href = "css.css">
 </head>
 <body>
 <div style = "margin-left: 46%"  id = "id"><h1> Đố Vui </h1></div>
 <div id = "quiz">
     <br>
+    <div style="margin-left: 93%"> <img src="picter/play.png" id="icon"></div>
     <div id = "question" ></div>
-    <span id="apoint"><p>Point: 0 </p></span>
-<!--    <div class = "music" >-->
-<!--        <audio id="happy">-->
-<!--            <source src="music/Am-thanh-tra-loi-dung-www_nhacchuongvui_com.mp3">-->
-<!--        </audio>-->
-<!--    </div>-->
+    <span id = "apoint"><p>Point: 0 </p> </span>
     <div id = "picter">
         <img src = "" alt = "" id = "img">
     </div>
@@ -27,13 +23,32 @@
     <div  id = " explain " > </div>
     <br>
 </div>
-    <audio id = "mymusic" autoplay>
-        <source src = "music/SummerLeaves-JohnEpping-3761460 (1).mp3" type="audio/mpeg">
+    <audio id = "mymusic">
+        <source src = "music/SummerLeaves-JohnEpping-3761460 (1).mp3" type="audio/mp3">
     </audio>
-    <audio id="happy1">
+    <audio id = "happy1">
         <source src="music/Am-thanh-tra-loi-dung-www_nhacchuongvui_com.mp3">
     </audio>
+    <audio id = "ohno">
+        <source src = "music/Hieu-ung-am-thanh-oh-nooo-www_nhacchuongvui_com.mp3">
+    </audio>
+
 </body>
+<script>
+    let myMusic = document.getElementById("mymusic");
+    let icon = document.getElementById("icon");
+    icon.onclick = function (){
+        if (myMusic.paused){
+            myMusic.play()
+            icon.src = "picter/pause.png"
+        }else {
+            myMusic.pause();
+            icon.src = "picter/play.png"
+
+        }
+
+    }
+</script>
 <script src = "Quiz.js"></script>
 <script src = "GameManager.js"></script>
 <script src = "LineGame.js"></script>

@@ -22,11 +22,12 @@ div#explain{
     height: 30px;
 }
 #picter{
-    height: 200px;
+    height: 300px;
 }
 #icon{
-   width: 60px;
+   width: 30px;
     display: flex;
+    cursor: pointer;
 }
 .music{
     margin-left: 90%;

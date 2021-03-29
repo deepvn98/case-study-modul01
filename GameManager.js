@@ -6,6 +6,7 @@ class GameManager {
         this.current = 0;
         this.point = 0;
     }
+    //kiểm tra câu trả lời đúng sai
     checkAnswer(ans){
         if(ans === this.quizs[this.current].correct){
             this.point += 10;
@@ -16,6 +17,7 @@ class GameManager {
             return false;
         }
     }
+    //Điều kiện kết thúc Game
     endGame(){
         if(this.count == 0){
             alert("bạn đã trả lời sai, vui lòng chơi lại từ đầu!" + "Điểm của bạn là: " + this.point);
@@ -25,6 +27,7 @@ class GameManager {
             showCount()
         }
     }
+    //Thêm câu hỏi
     addQuiz(quiz){
         this.quizs.push(quiz)
     }
