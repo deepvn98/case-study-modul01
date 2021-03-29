@@ -1,19 +1,29 @@
 class GameManager {
     constructor( number ) {
+        this.count = 3 ;
         this.quizs = [];
         this.number = number;
         this.current = 0;
+        this.point = 0;
     }
     checkAnswer(ans){
         if(ans === this.quizs[this.current].correct){
+            this.point += 10;
             return true;
         }else {
+            this.count--;
+            showCount()
             return false;
         }
     }
     endGame(){
-       alert("bạn đã trả lời sai, vui lòng chơi lại từ đầu!");
-       this.current = 0;
+        if(this.count == 0){
+            alert("bạn đã trả lời sai, vui lòng chơi lại từ đầu!" + "Điểm của bạn là: " + this.point);
+            this.current = 0;
+            this.count = 3;
+            this.point =0;
+            showCount()
+        }
     }
     addQuiz(quiz){
         this.quizs.push(quiz)

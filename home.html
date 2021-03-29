@@ -5,7 +5,7 @@
     <title>Form thông tin người chơi</title>
 </head>
 <body background="picter/backgroud.jpg">
-    <form style="margin-top: 200px" action = "index.html" method="post">
+<!--    <form style="margin-top: 200px" action = "" method="post">-->
         <h1 style = "text-align: center"> person information </h1>
         <table style = "margin: auto">
             <tr>
@@ -32,27 +32,19 @@
                     <input type = "text" id = "gmail">
                 </td>
             </tr>
-            <td>
-                Gender:
-            </td>
-            <td>
-                <input type = "radio" name = "gender" value = "male" checked>male
-                <input type = "radio" name = "gender" value = "female" checked>female
-            </td>
             <tr>
-
                 <td>
-                    <input type = "submit" value = "submit" >
+                    <input type = "submit" value = "submit" onclick="check1()" >
                 </td>
                 <td>
-                    <input type = "reset" value = "reset" >
+                    <input type="reset" value = "reset" >
                 </td>
             </tr>
 
         </table>
-    </form>
+<!--    </form>-->
 
 
 </body>
-
+<script src="checkForm.js"></script>
 </html>
