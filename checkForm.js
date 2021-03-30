@@ -11,6 +11,6 @@ function check1(){
         alert("Bạn cần điền đầy đủ thông tin")
     }else {
         alert("chào mừng "+firstName+" "+lastName+" chúc bạn chơi game vui vẻ!");
-        window.location = "index.html";
+        window.location = "home1.html";
     }
 }
