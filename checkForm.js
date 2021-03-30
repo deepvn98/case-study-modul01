@@ -10,6 +10,7 @@ function check1(){
     if(checkForm(firstName)|| checkForm(lastName)){
         alert("Bạn cần điền đầy đủ thông tin")
     }else {
-        window.location = "/casetudy/index.html";
+        alert("chào mừng "+firstName+" "+lastName+" chúc bạn chơi game vui vẻ!");
+        window.location = "index.html";
     }
 }
