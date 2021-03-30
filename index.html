@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <title>Form thông tin người chơi</title>
+    <meta charset = "UTF-8">
+    <title>Game Đố Vui</title>
+    <link rel = "stylesheet" href = "css.css">
 </head>
-<body background="picter/backgroud.jpg">
-        <h1 style = "text-align: center;margin-top: 200px"> person information </h1>
-        <table style="margin: 20px 0 0 500px  ">
-            <tr>
-                <td>
-                    First Name:
-                </td>
-                <td>
-                    <input type = "text" id = "firstname" value = "">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Last Name:
-                </td>
-                <td>
-                    <input type = "text" id = "lastname">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type = "submit" value = "submit" onclick="check1()" >
-                </td>
-                <td>
-                    <input type="reset" value = "reset" >
-                </td>
-            </tr>
+<body>
+<div style = "margin-left: 46%"  id = "id"><h1> Đố Vui </h1></div>
+<div id = "quiz">
+    <br>
+    <div style="margin-left: 93%"> <img src="picter/play.png" id="icon"></div>
+    <div id = "question" ></div>
+    <span id = "apoint"><p>Point: 0 </p> </span>
+    <div id = "picter">
+        <img src = "" alt = "" id = "img">
+    </div>
+    <button class = "button" id = "ans1" onclick = "chooseAns(this.id)"> Đáp án 1 </button>
+    <button class = "button" id = "ans2" onclick = "chooseAns(this.id)"> áp án 2 </button>
+    <button class = "button" id = "ans3" onclick = "chooseAns(this.id)"> Đáp án 3 </button>
+    <button class = "button" id = "ans4" onclick = "chooseAns(this.id)"> Đáp án 4 </button>
+    <p id = "count"></p>
+    <div  id = " explain " > </div>
+    <br>
+</div>
+<audio id = "mymusic">
+    <source src = "music/SummerLeaves-JohnEpping-3761460 (1).mp3" type="audio/mp3">
+</audio>
+<audio id = "happy1">
+    <source src="music/Am-thanh-tra-loi-dung-www_nhacchuongvui_com.mp3">
+</audio>
+<audio id = "ohno">
+    <source src = "music/Hieu-ung-am-thanh-oh-nooo-www_nhacchuongvui_com.mp3">
+</audio>
 
-        </table>
 </body>
-<script src="checkForm.js"></script>
+<script src = "Quiz.js"></script>
+<script src = "GameManager.js"></script>
+<script src = "LineGame.js"></script>
+
 </html>
